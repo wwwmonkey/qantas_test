@@ -1,21 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './qantas-logo.png';
 
 function App() {
   return (
-    <div className="App">
+    <div className="container px-3 pt-10 pb-1">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
+      <a
+          href="//hotel.qantas.com.au"
+          className="block max-w-1/2 sm:max-w-1/5"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+        <img src={logo} alt="qantas logo" />
         </a>
       </header>
     </div>
