@@ -8,6 +8,10 @@ I prefer using CSS utility classes and most recently used Salesforce's [Lightnin
 
 So, there is a tradeoff between revisting and learning new skills versus speed/optimisation.  I'd like to utilise this test as motivation to research and learn, so let's checkout something 'new'.
 
+## Assumptions taken in build
+
+The screenshot shows the Sort selected as Price high-low, but the data doesn't appear to be sorted as such.  I'm assuming it should be sorted Desc by default.
+
 ## Breakdown of installers used
 
 [CRA - Create React App](https://create-react-app.dev/docs/getting-started/)

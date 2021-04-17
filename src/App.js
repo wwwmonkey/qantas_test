@@ -1,5 +1,7 @@
 import logo from './qantas-logo.png';
 
+import HotelList from './HotelList';
+
 function App() {
   return (
     <div className="container px-3 pt-10 pb-1">
@@ -13,6 +15,9 @@ function App() {
         <img src={logo} alt="qantas logo" />
         </a>
       </header>
+      <main>
+        <HotelList />
+      </main>
     </div>
   );
 }
