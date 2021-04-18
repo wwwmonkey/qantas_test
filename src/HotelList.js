@@ -24,6 +24,7 @@ function HotelList() {
 
     // Internal rendering for pre-sorting
     // TODO: pass only required data as props (optimisation)
+    // TODO: Show/hide loading animation
     function HotelList() {
         const listItems = hotelData.map((hotel, index) =>
           <Hotel key={index} data={hotel} />

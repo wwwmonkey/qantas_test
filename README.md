@@ -2,24 +2,45 @@
 
 ## Architecture &amp; Design decisions
 
-Most recently I have been working with Salesforce's [LWC UI framework](https://lwc.dev/), but as React is currently the most popular framework I've decided to refresh my skills and utilise it for this test.  As such, it's also likely to be easier for the reviewing and peering of the code.
+Most recently I have been working with Salesforce's [LWC UI framework](https://lwc.dev/), but as React continues to be the most popular UI framework I've decided to refresh my skills and utilise it for this test.  As such, it's also likely to be easier to review the code.
 
-I prefer using CSS utility classes and most recently used Salesforce's [Lightning design language](https://www.lightningdesignsystem.com/).  Bootstrap 5 has gone native JS, which is interesting, but I've wanted to look at [Tailwind](https://tailwindcss.com/) for a while so let's include that.
+I enjoy using CSS utility classes when the site's theme has been setup and most recently used Salesforce's [Lightning design language](https://www.lightningdesignsystem.com/).  Bootstrap 5 has gone native JS, which is interesting, but I've wanted to look at [Tailwind](https://tailwindcss.com/) for a while so let's include that.  In an optimisation phase the utility classes could be extracted with [@apply](https://v1.tailwindcss.com/course/composing-utilities-with-apply)
 
 So, there is a tradeoff between revisting and learning new skills versus speed/optimisation.  I'd like to utilise this test as motivation to research and learn, so let's checkout something 'new'.
 
 Noticed part-way through the build that my tooling is configured for LWC so ESLint, Prettier, Accessibility linting etc doesn't seem to working correctly in VSCode...
 
-I also investigated .module.scss files for the Ratings component, which would be my preference but had a local configuration issue so have just included BEM SCSS.
+I investigated .module.scss files for the Ratings component. I had an unresolved local configuration issue so have fallen back to BEM SCSS.
 
 ## Assumptions taken in build
 
 The screenshot shows the Sort selected as Price high-low, but the data doesn't appear to be sorted as such.  I'm assuming it should be sorted Desc by default.
 
+The Offer name is shown as a hyperlink.  Seems a confusing UX, but as there is no spec I would assume the whole list element is clickable. But I have seen requirements previously were there was requirements for popups from child elements etc that don't follow the parent's link.
+
+## Testing
+
+I quite like the TDD model, but I found it challenging to pre-write tests in the absence of Gherkin specifications.
+I've currently only written one tests and would prioritise this if spending more time.
+
+## Conclusion
+
+This code is far from production ready, but whilst working sporadically over the weekend I've enjoyed reconnecting with React and investigating Tailwind. The Tailwind documentation was quite good.
+
+The component is somewhat responsive and follows the idea of the design.  With more time available I would:
+
+* Write more functional and e2e tests
+* Optimise the code for maintenance and performance
+* Perform browser and other testing
+* Make sure the code follows corporate style, accessibility and other guidelines
+* peer review etc
+
 ## Breakdown of installers used
 
 [CRA - Create React App](https://create-react-app.dev/docs/getting-started/)
+
 [React Testing Library](https://create-react-app.dev/docs/running-tests#react-testing-library)
+
 [Tailwind](https://tailwindcss.com/docs/guides/create-react-app)
 
 ## Default CRA README follows
