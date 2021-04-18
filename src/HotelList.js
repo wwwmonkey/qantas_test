@@ -23,6 +23,7 @@ function HotelList() {
       }, [sortDirection]);
 
     // Internal rendering for pre-sorting
+    // TODO: pass only required data as props (optimisation)
     function HotelList() {
         const listItems = hotelData.map((hotel, index) =>
           <Hotel key={index} data={hotel} />

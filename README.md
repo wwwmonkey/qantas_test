@@ -8,6 +8,10 @@ I prefer using CSS utility classes and most recently used Salesforce's [Lightnin
 
 So, there is a tradeoff between revisting and learning new skills versus speed/optimisation.  I'd like to utilise this test as motivation to research and learn, so let's checkout something 'new'.
 
+Noticed part-way through the build that my tooling is configured for LWC so ESLint, Prettier, Accessibility linting etc doesn't seem to working correctly in VSCode...
+
+I also investigated .module.scss files for the Ratings component, which would be my preference but had a local configuration issue so have just included BEM SCSS.
+
 ## Assumptions taken in build
 
 The screenshot shows the Sort selected as Price high-low, but the data doesn't appear to be sorted as such.  I'm assuming it should be sorted Desc by default.
