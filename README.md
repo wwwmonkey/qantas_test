@@ -1,4 +1,4 @@
-# Qantas FED Test for Scott Hall
+# Qantas FED Test
 
 ## Architecture &amp; Design decisions
 
